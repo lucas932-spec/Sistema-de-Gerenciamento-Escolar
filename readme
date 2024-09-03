@@ -1,0 +1,50 @@
+Sistema de Gerenciamento Escolar
+O objetivo deste projeto é desenvolver um sistema de banco de dados para gerenciar informações de uma escola, incluindo alunos, cursos e suas respectivas notas. O sistema utilizará SQL para criar e manipular tabelas, realizar inserções de dados, executar consultas para obter informações relevantes, bem como realizar atualizações e exclusões conforme necessário.
+Sistema de Gerenciamento Escolar
+Este projeto implementa um banco de dados para gerenciar as informações de alunos, cursos e notas de uma escola. Utilizando SQL, o sistema permite operações de inserção, consulta, atualização e exclusão de dados. A seguir, são apresentadas as instruções para configuração e uso do projeto.
+
+Estrutura do Banco de Dados
+O banco de dados contém três tabelas principais:
+
+Alunos:
+
+id_aluno: Identificador único do aluno (chave primária, auto incremento).
+nome: Nome do aluno.
+data_nascimento: Data de nascimento do aluno.
+endereco: Endereço do aluno.
+Cursos:
+
+id_curso: Identificador único do curso (chave primária, auto incremento).
+nome_curso: Nome do curso.
+descricao: Descrição do curso.
+Notas:
+
+id_nota: Identificador único da nota (chave primária, auto incremento).
+id_aluno: Identificador do aluno (chave estrangeira referenciando Alunos).
+id_curso: Identificador do curso (chave estrangeira referenciando Cursos).
+nota: Nota atribuída ao aluno no curso.
+Instruções para Uso
+Criar o Banco de Dados e as Tabelas:
+
+Execute o script SQL para criar o banco de dados Escola e definir as tabelas Alunos, Cursos e Notas.
+Inserção de Dados:
+
+Utilize os comandos INSERT INTO para adicionar pelo menos 3 registros na tabela Alunos, 3 registros na tabela Cursos e 5 registros na tabela Notas.
+Consultas:
+
+Liste todos os alunos com suas respectivas notas e cursos.
+Calcule a média das notas para cada curso.
+Encontre o aluno com a maior nota em cada curso.
+Atualização de Dados:
+
+Atualize a nota de um aluno em um curso específico.
+Modifique o endereço de um aluno para um novo endereço.
+Exclusão de Dados:
+
+Exclua um aluno e todas as suas notas associadas.
+Remova um curso e todas as notas associadas a esse curso.
+Requisitos
+SQL Server ou qualquer outro gerenciador de banco de dados compatível.
+Cliente SQL para execução dos comandos (por exemplo, MySQL Workbench, DBeaver).
+Licença
+Este projeto é distribuído sob a Licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
